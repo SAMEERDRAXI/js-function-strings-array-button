@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Onclick Button in Js</title>
+<style type="text/css">
+	.box
+	{
+		color:white;
+	}
+</style>
+</head>
+<body>
+	<h1>Function Invoked from the clicking of the button</h1>
+	<h3>click below to change colour</h3>
+
+	<h1 class="box">
+		WELCOME TO SAMEERDRAXI.COM
+	</h1>
+	
+	<button onclick="changecolor('blue')">Blue</button>
+	<button onclick="changecolor('Red')">Red</button>
+	<button onclick="changecolor('Green')">Green</button>
+	<button onclick="changecolor('Black')">lighblue</button>
+
+
+	<script type="text/javascript">
+		function changecolor(color){
+			document.querySelector('.box').style.color= color;
+		}
+	</script>
+
+
+
+
+	<h1>Button function</h1>
+
+	<p> click here to see my name</p>
+
+
+	<button onclick="myFunction()">Click here</button>
+	<p id="sameer"></p>
+	<script type="text/javascript">
+	function myFunction(){
+		document.getElementById("sameer").innerHTML="SAMEER DRAXI";
+
+	}
+    </script>
+
+
+
+</body>
+</html>

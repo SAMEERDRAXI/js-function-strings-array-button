@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<!--Strings start-->
+
+	<h1>Strings</h1>
+
+	<h1 id ="string1">Strings</h1>
+	<script type="text/javascript">
+		let a1='My self "Sameer draxi"';
+		let a2= "My Younger sister 'SANA'";
+		let a3= "My Younger Brother 'Sohel ameer'";
+		document.getElementById("string1").innerHTML=
+		a1+"<br>"+a2+"<br>"+a3;
+
+	</script>
+
+
+	<h2 id="string2"></h2>
+	<script type="text/javascript">
+		
+		let text ="It\'s my webpage.";
+		document.getElementById("string2").innerHTML=text;
+	</script>
+	<!--Strings ends here-->
+
+
+
+	<!-- Strings Methods start here-->
+
+
+	<h1>String Method</h1>
+
+
+
+
+	<p id="String3"></p>
+
+
+<script>
+let str = "Apple, Banana, Kiwi";
+document.getElementById("String3").innerHTML = str.substr(7,6);
+</script>
+
+
+
+
+
+
+<p>Convert string to lower case:</p>
+<button onclick="myFunction()">click here to lower case</button>
+
+<h1 id="string4">SAMEER DRAXI!</h1>
+
+<script type="text/javascript">
+	function myFunction() {
+		let text = document.getElementById("string4").innerHTML;
+		document.getElementById("string4").innerHTML =
+		text.toLowerCase();
+
+	}
+</script>
+
+
+
+
+
+
+
+<!-- Strings Methods  ends here-->
+
+
+<!-- search string starts here -->
+
+	<h1>String search</h1>
+	<p>BIJAPUR THE GUMMAT NAGARI, GOLGUMBAZ</p>
+	<p id="demo"></p>
+	<script type="text/javascript">
+		let text="BIJAPUR THE GUMMAT NAGARI, GOLGUMBAZ"
+		document.getElementById('demo').innerHTML = text.search("GOLGUMBAZ");
+	</script>
+
+<!-- search string ends here -->	
+
+
+
+<!--String templates -->
+<h1>String template</h1>
+
+<p id="place"></p>
+<script type="text/javascript">
+	let CITYName = "BIJAPUR";
+	let STATEName = "KARNATAKA";
+
+	let text1= "WELCOME TO ${CITYName} ${STATEName}!";
+  	document.getElementById("place").innerHTML=text1;
+</script>
+
+
+<!--String templates ends -->
+</body>
+</html>

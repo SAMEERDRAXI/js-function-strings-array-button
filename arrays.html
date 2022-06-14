@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Arrays and methods,sorts,array iterations, const</title>
+	
+</head>
+<body>
+
+	<!--Arrays start here-->
+	<h1>Arrays</h1>
+
+
+	<button onclick="myFunction()">click here</button>
+
+<p id="fruits"></p>
+
+<script>
+const fruits = ["Banana", "Orange", "Apple"];
+document.getElementById("fruits").innerHTML = fruits;
+
+function myFunction() {
+  fruits[fruits.length] = "Anjer";
+  document.getElementById("array1").innerHTML = fruits;
+}
+</script>
+
+
+
+ <h1 id="fruits1"></h1>
+
+ <script type="text/javascript">
+ 	const fruits1=["Banana","Apple","Orange"];
+ 	document.getElementById("fruits1").innerHTML=fruits.length;
+ </script>
+
+ <!--Arrays ends here-->
+
+ <!--Arrays method start here-->
+<h1>Array Methods</h1>
+
+<p id="arrayexample"></p>
+
+<script>
+const array1 = ["Cecilie", "Lone"];
+const array2 = ["Emil", "Tobias", "Linus"];
+const array3 = ["Robin", "Morgan"];
+
+const myChildren = array1.concat(array2, array3); 
+
+document.getElementById("arrayexample").innerHTML = myChildren;
+</script>
+
+
+<p id="demo"></p>
+
+<script>
+const myGirls = ["Cecilie", "Lone"];
+const myBoys = ["Emil", "Tobias", "Linus"];
+const myChildren = myGirls.concat(myBoys);
+
+document.getElementById("demo").innerHTML = myChildren;
+</script>
+
+<!--Arrays method ends here-->
+
+<!--Arrays sort start here-->
+
+
+<p id="array4"></p>
+<p id="array5"></p>
+
+<script>
+const points = [40, 100, 1, 5, 25, 10];
+document.getElementById("array4").innerHTML = points;  
+
+points.sort(function(a, b){return a - b});
+document.getElementById("array5").innerHTML = points;
+</script>
+
+<!--Arrays sort ends here-->
+
+<!--Arrays Iteration start here-->
+<h1>Array Iteration </h1>
+<p id="array6"></p>
+
+<script>
+const numbers = [45, 4, 9, 16, 25];
+
+let txt = "";
+numbers.forEach(myFunction);
+document.getElementById("array6").innerHTML = txt;
+
+function myFunction(value) {
+  txt += value + "<br>"; 
+}
+</script>
+
+<p id="Iteration"></p>
+
+<script>
+const numbers = [4, 9, 16, 25, 29];
+
+document.getElementById("Iteration").innerHTML = "First number over 18 has index " + numbers.findIndex(myFunction);
+
+function myFunction(value, index, array) {
+  return value > 18;
+}
+</script>
+
+<!--Array Iteration ends here-->
+
+
+<!--Array const start here-->
+<h1>Array Const</h1>
+<p id="array7"></p>
+
+<script>
+var cars = ["Saab", "Volvo", "BMW"];
+// Here cars[0] is "Saab"
+{  
+  var cars = ["Toyota", "Volvo", "BMW"]; 
+  // Here cars[0] is "Toyota"
+}
+// Here cars[0] is "Toyota"
+document.getElementById("array7").innerHTML = cars[0];
+</script>
+
+
+
+	
+</body>
+</html>
